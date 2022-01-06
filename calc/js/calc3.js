@@ -1,3 +1,14 @@
+
+/*
+デフォルトで表示するカレンダーを現在の年月にして、
+年月の表示・前月と翌月への移動の機能を追加してみます。
+
+
+add_calendar()とgenerate_calendar_header()という関数を
+追加しています。
+*/
+
+
 window.onload = function(){
     // 現在の年月の取得
     var current = new Date();

@@ -1,3 +1,14 @@
+
+/*
+実際に指定した年月のカレンダーをhtmlファイルで表示してみます。
+
+
+これで指定した年月のカレンダーの表示ができるようになりました。
+先ほどのcalc.js の get_month_calendar()の中身はそのままで、
+取得した情報を使ってgenerate_month_calendar()で要素を生成しています。
+
+*/
+
 // 年月の指定
 var year = 2022;
 var month = 5;
@@ -92,7 +103,7 @@ function generate_month_calendar(year, month){
         var weekdayCount = weekday;
         for (var i = 0; i < lastDay; i++){
             calendarData[i] = {
-                day: i +1;
+                day: i + 1,
                 weekday: weekdayCount
             }
             // 曜日のカウントが6（土曜日）まできたら0（日曜日）に戻す
